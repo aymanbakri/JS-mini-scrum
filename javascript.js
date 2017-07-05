@@ -1,5 +1,5 @@
 $(function () {
-//---------Move,edit,remove Function-------------
+
 function actions(){
 //---------remove task--------------
     $(".fa-trash").on("click", function() {
