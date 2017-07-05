@@ -1,4 +1,4 @@
-# mini scrum management tool
+# mini scrum 
 
 
 In this project "Scrum Board" there is three columns: "To do", "In progress" and "Done".
