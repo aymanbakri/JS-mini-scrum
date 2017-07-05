@@ -186,7 +186,7 @@ $("#slider-range-max").slider({
 $("#amount").val($("#slider-range-max").slider("value"));
 
 //------------Local Storage-----------------
-function localajre() {
+function localstorage() {
     var saveForm = {
         title : $('#storytitle').val(),
         comment: $('#firstComment').val(),
