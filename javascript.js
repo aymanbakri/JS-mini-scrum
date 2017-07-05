@@ -187,7 +187,7 @@ $("#amount").val($("#slider-range-max").slider("value"));
 
 //------------Local Storage-----------------
 function localajre() {
-    var nykt = {
+    var saveForm = {
         title : $('#storytitle').val(),
         comment: $('#firstComment').val(),
         accountName : $('#accountName').val(),
@@ -195,7 +195,7 @@ function localajre() {
         priority : $('#amount').val(),
         date : $('#datepicker').val()
     }
-    localStorage.setItem('todos', nykt);
+    localStorage.setItem('todos', saveForm);
     return false;
 };
 
