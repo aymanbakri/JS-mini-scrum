@@ -1,12 +1,11 @@
 # mini scrum management tool
 
-The application:
 
-In page "Scrum Board" you see three columns: "To do", "In progress" and "Done".
+In this project "Scrum Board" there is three columns: "To do", "In progress" and "Done".
 
-Each columns includes tasks.
+Each columns includes a task.
 
-Stories are added by clicking the plus sign (+) in the column header.
+Stories are added by clicking on the plus sign (+) in the column header.
 
 Stories can be sorted by dragging them up or down and can be dragged between columns.
 
