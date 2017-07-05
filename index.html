@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type ="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/6.0.0/normalize.min.css">
+    <link href="https://code.jquery.com/ui/jquery-ui-git.css" rel="stylesheet" type="text/css" />
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="https://use.fontawesome.com/7a7ed8126b.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="https://code.jquery.com/jquery-git.js"></script>
+    <script src="https://code.jquery.com/ui/jquery-ui-git.js"></script>
+    <script src="javascript.js"></script>
+    <!-- Include Editor style. -->
+<link href='https://cdnjs.cloudflare.com/ajax/libs/froala-editor/2.5.1/css/froala_editor.min.css' rel='stylesheet' type='text/css' />
+<link href='https://cdnjs.cloudflare.com/ajax/libs/froala-editor/2.5.1/css/froala_style.min.css' rel='stylesheet' type='text/css' />
+
+<!-- Include JS file. -->
+<script type='text/javascript' src='https://cdnjs.cloudflare.com/ajax/libs/froala-editor/2.5.1/js/froala_editor.min.js'></script>
+
+    <title>Scrum Board</title>
+</head>
+<body>
+    <div class="ScrumProject">
+  <div>
+    <div class="form">
+      <h1>Scrum Board</h1>
+    </div>
+     <div class="flex">
+    <ul class="scrum-board backlog">
+        <h2>TO-DO<i class="fa fa-plus" aria-hidden="true"></i></h2>
+    </ul>
+      <ul class="scrum-board in-progress">
+        <h2>In progress<i class="fa fa-plus" aria-hidden="true"></i></h2>
+      </ul>
+      <ul class="scrum-board done">
+        <h2>Done<i class="fa fa-plus" aria-hidden="true"></i></h2>
+      </ul>
+      </div>
+   <!--Start Dialog-->
+   <div title="Add a story" class="dialog1">
+       <form>
+           <div id="tabs">
+               <ul>
+                   <li><a href="#tabs-1">story</a></li>
+                   <li><a href="#tabs-2">comments</a></li>
+               </ul>
+               <div id="tabs-1">
+                   <label class="titleClass" for="title">Title:</label>
+                   <br>
+                   <input id="storytitle" placeholder="story title" style="width: 100%; margin:2%">
+                   <br>
+                   <div class="Floala_Editor">
+                   <label class="descriptionClass" for="description">Description:</label>
+                   <br>
+                   <input id="description" placeholder="full description" style="width: 100%; margin:2% ;height:50px;">
+                   <br>
+                   </div>
+                   <p>
+                       <label for="amount" style="float:left;">priority:
+                       <input type="text" id="amount" readonly style="border:0; width: 150px; color:#f6931f ; font-weight:bold;"></label>
+                       <label for="date" style="float:left; margin-left:4%;">Date:</label>
+                       <br>
+                       <input type="date" id="datepicker" style="float:left">
+                   </p>
+                   <div id="slider-range-max" style="width: 150px;"></div>
+               </div>
+               <div id="tabs-2" style="height:auto;">   
+                    <ol class="comments" placeholder="No Comments" style="width: 491px; margin:2% ;height:80px;"></ol>
+                    <br>
+                    <button type="button" id='addcmntbtn' style=" margin:4%">Add Comment</button>
+                    <br>
+                    <textarea id="newComment" placeholder="Add new comment" style="width: 491px; margin:2% ;height:80px;" ></textarea>
+                    <br>
+               </div>
+           </div>
+       </form>
+   </div>
+   <!--End Dialog-->
+</body>
+</html>
